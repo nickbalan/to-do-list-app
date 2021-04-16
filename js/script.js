@@ -85,5 +85,10 @@ function newItem(){
 	function deleteListItem(){
 		li.addClass("delete")
 	};
+
+	/* 4. Reordering the items: */
+	/* jQuery code: */
+	/* Selects all the list elements with a list id and enables it to be sortable */
+	$('#list').sortable();
 };
 
