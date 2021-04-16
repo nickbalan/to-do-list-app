@@ -63,6 +63,12 @@ function newItem(){
 	let crossOutButton = $('<crossOutButton></crossOutButton>');
 
 	/* Javascript code: */
+	// crossOutButton.appendChild(document.createTextNode("X"));
+	/* jQuery code: */
+	/* Adds an 'X' element to the crossOutButton, which will be used to delete items from the list form */
+	crossOutButton.append(document.createTextNode('X'));
+
+	/* Javascript code: */
 	// li.appendChild(crossOutButton);
 	/* jQuery code: */
 	/* Appends the crossOutButton to the li element. */
