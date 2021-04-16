@@ -37,5 +37,22 @@ function newItem(){
 		/* Selects the list id and appends li to it */
     	$('#list').append(li);
   	};
+
+  	/* 2. Crossing out an item from the list of items: */
+	/* Javascript code: */
+	/* function crossOut() {
+		li.classList.toggle("strike");
+	 	}
+	 	li.addEventListener("dblclick",crossOut);
+	*/
+	/* jQuery code: */
+	function crossOut() {
+		/* Appends the toggle between adding and removing one class name from the li element. */
+		li.toggleClass("strike");
+		};
+		/* Adding an event handling that crosses out an item by clicking on it. Uses the text-decoration: line-through from .css file. */
+		li.on('dblclick', function crossOut() {
+			li.toggleClass("strike")
+		});
 };
 
