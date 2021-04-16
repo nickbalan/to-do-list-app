@@ -54,5 +54,12 @@ function newItem(){
 		li.on('dblclick', function crossOut() {
 			li.toggleClass("strike")
 		});
+
+	/* 3(i). Adding the delete button "X": */
+	/* Javascript code: */
+	// let crossOutButton = document.createElement("crossOutButton");
+	/* jQuery code: */
+	/* Creates a cross-out button to delete items from the UI form */
+	let crossOutButton = $('<crossOutButton></crossOutButton>');
 };
 
