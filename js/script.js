@@ -73,5 +73,17 @@ function newItem(){
 	/* jQuery code: */
 	/* Adding an event handling that deletes an item by clicking on it by using deleteListItem function. */
 	crossOutButton.on("click", deleteListItem);
+
+	/* 3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css: */
+	/* Javascript code: */
+	/* function deleteListItem(){
+	 	li.classList.add("delete")
+	 	};
+	*/
+	/* jQuery code: */
+	/* Deteles an item then clicking on it. Uses a class from .css file that has the attribute display: none  */
+	function deleteListItem(){
+		li.addClass("delete")
+	};
 };
 
