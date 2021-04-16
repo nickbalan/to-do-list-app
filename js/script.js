@@ -17,7 +17,25 @@ function newItem(){
 	/* Javascript: */
 	// li.appendChild(text);
 	/* jQuery code: */
-	/* Appends the inputValue value into the li */
+	/* Appends the inputValue value into the li element */
 	li.append(inputValue);
+
+	/* Javascript code: */
+	/*
+	if (inputValue === '') {
+		alert("You must write something!");
+    } else {
+    	let list = document.querySelector('#list');
+     	list.appendChild(li);
+   	};
+   	*/
+	/* jQuery code: */
+	/* displays an error message if nothing has been entered into the input  */
+	if (inputValue === '') {
+	alert('You must write something!')
+	} else {
+		/* Selects the list id and appends li to it */
+    	$('#list').append(li);
+  	};
 };
 
