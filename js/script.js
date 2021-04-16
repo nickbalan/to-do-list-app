@@ -67,5 +67,11 @@ function newItem(){
 	/* jQuery code: */
 	/* Appends the crossOutButton to the li element. */
 	li.append(crossOutButton);
+
+	/* Javascript code: */
+	//crossOutButton.addEventListener("click", deleteListItem);
+	/* jQuery code: */
+	/* Adding an event handling that deletes an item by clicking on it by using deleteListItem function. */
+	crossOutButton.on("click", deleteListItem);
 };
 
