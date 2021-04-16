@@ -61,5 +61,11 @@ function newItem(){
 	/* jQuery code: */
 	/* Creates a cross-out button to delete items from the UI form */
 	let crossOutButton = $('<crossOutButton></crossOutButton>');
+
+	/* Javascript code: */
+	// li.appendChild(crossOutButton);
+	/* jQuery code: */
+	/* Appends the crossOutButton to the li element. */
+	li.append(crossOutButton);
 };
 
