@@ -13,5 +13,11 @@ function newItem(){
 	/* jQuery code: */
 	/* Gets the input values from the index page. Selects the input element by its ID. Stores the value into a variable. */
 	let inputValue = $('#input').val();
+
+	/* Javascript: */
+	// li.appendChild(text);
+	/* jQuery code: */
+	/* Appends the inputValue value into the li */
+	li.append(inputValue);
 };
 
